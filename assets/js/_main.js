@@ -16,7 +16,7 @@ const browserPref = window.matchMedia && window.matchMedia('(prefers-color-schem
 function determineComputedTheme() {
   // Determine the expected state of the theme toggle, which can be "dark", "light", or default "system"
   let themeSetting = localStorage.getItem("theme");
-  themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
+  themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "light" : themeSetting;
 
   // Return the setting if set, or use the browser preference
   if (themeSetting != "system") {
@@ -153,12 +153,12 @@ $(document).ready(function () {
 
   // If the user hasn't chosen a theme, follow the OS preference
   setTheme();
-  window.matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
-            setTheme(e.matches ? "dark" : "light");
-          }
-        });
+  // window.matchMedia('(prefers-color-scheme: dark)')
+  //       .addEventListener("change", (e) => {
+  //         if (!localStorage.getItem("theme")) {
+  //           setTheme(e.matches ? "dark" : "light");
+  //         }
+  //       });
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);

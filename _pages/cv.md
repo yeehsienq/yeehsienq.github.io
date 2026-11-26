@@ -9,13 +9,18 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<object data="/files/Academic_CV_Yee_Hsien_Quek.pdf" type="application/pdf" width="100%" height="900px">
+  <a href="/files/Academic_CV_Yee_Hsien_Quek.pdf">Download my CV (PDF)</a>
+</object>
 
-Work experience
+<!-- Education
+======
+* (Incoming) Ph.D in Civil Engineering, National University of Singapore
+* M.Sc. in Robotics, Systems and Control, ETH Zürich, 2026
+* B.Eng. in Electrical Engineering, National University of Singapore, 2022
+* B.A. in Economics, National University of Singapore, 2022 -->
+
+<!-- Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
@@ -61,4 +66,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
